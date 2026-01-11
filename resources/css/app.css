@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Playfair Display', serif;
+}
+
+/* Charlotte Tilbury Brand Colors */
+:root {
+    --ct-cream: #F8F5F0;
+    --ct-rose: #E8C4B8;
+    --ct-gold: #C9A86A;
+    --ct-black: #1A1A1A;
+    --ct-burgundy: #8B2332;
+}
