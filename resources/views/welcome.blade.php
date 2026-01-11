@@ -26,7 +26,11 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--ct-cream);
+            background-image: url('/hero-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             overflow-x: hidden;
         }
         
@@ -809,7 +813,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo font-display">CHARLOTTE TILBURY</div>
+            <a href="/" class="logo font-display" style="text-decoration: none;">CHARLOTTE TILBURY</a>
             
             <div class="nav-links">
                 <div class="nav-item">
@@ -923,8 +927,8 @@
     </div>
 
     <!-- Trust Badges -->
-    <section style="background: #F8F5F2; padding: 40px 0; border-top: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8;">
-        <div class="container">
+    <section style="background: rgba(248, 245, 242, 0.95); padding: 40px 0; border-top: 1px solid #E8E8E8; border-bottom: 1px solid #E8E8E8; backdrop-filter: blur(10px);">
+        <div class="container" style="background: transparent;">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center;">
                 <div class="trust-item reveal">
                     <i class="fas fa-shipping-fast" style="font-size: 36px; color: var(--ct-gold); margin-bottom: 15px;"></i>
@@ -1113,14 +1117,14 @@
     <script>
         // Products Data
         const products = [
-            { id: 1, name: 'Pillow Talk Lipstick', price: 35, category: 'makeup', rating: 5, image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop', description: 'The iconic most-loved lipstick with matte finish', badge: 'BESTSELLER' },
-            { id: 2, name: 'Magic Cream', price: 95, originalPrice: 132, category: 'skincare', rating: 5, image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop', description: 'Hydrating face cream with velvety texture', badge: 'SALE', badgeClass: 'sale' },
-            { id: 3, name: 'Flawless Filter', price: 38, category: 'makeup', rating: 5, image: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&h=400&fit=crop', description: 'Illuminating foundation for perfect skin', badge: 'NEW', badgeClass: 'new' },
-            { id: 4, name: 'Setting Spray', price: 38, category: 'makeup', rating: 4, image: 'https://images.unsplash.com/photo-1598452963314-b09f397a5c48?w=400&h=400&fit=crop', description: 'Sets makeup for 16 hours', badge: 'BESTSELLER' },
-            { id: 5, name: 'Magic Serum', price: 75, category: 'skincare', rating: 5, image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop', description: 'Anti-aging serum with vitamin C' },
-            { id: 6, name: 'Matte Revolution', price: 32, category: 'makeup', rating: 5, image: 'https://images.unsplash.com/photo-1631214540240-54e2c98e7af1?w=400&h=400&fit=crop', description: 'Long-lasting matte lipstick' },
-            { id: 7, name: 'Scent of a Dream', price: 125, originalPrice: 150, category: 'fragrance', rating: 5, image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=400&fit=crop', description: 'Sensual floral fragrance', badge: 'SALE', badgeClass: 'sale' },
-            { id: 8, name: 'Eye Cream', price: 55, category: 'skincare', rating: 4, image: 'https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&h=400&fit=crop', description: 'Anti-wrinkle eye contour cream', badge: 'NEW', badgeClass: 'new' },
+            { id: 1, name: 'Pillow Talk Lipstick', price: 35, category: 'makeup', rating: 5, image: '/trucco.jpg', description: 'The iconic most-loved lipstick with matte finish', badge: 'BESTSELLER' },
+            { id: 2, name: 'Magic Cream', price: 95, originalPrice: 132, category: 'skincare', rating: 5, image: '/body-tilbury.jpg', description: 'Hydrating face cream with velvety texture', badge: 'SALE', badgeClass: 'sale' },
+            { id: 3, name: 'Flawless Filter', price: 38, category: 'makeup', rating: 5, image: '/fondotinta.jpg', description: 'Illuminating foundation for perfect skin', badge: 'NEW', badgeClass: 'new' },
+            { id: 4, name: 'Setting Spray', price: 38, category: 'makeup', rating: 4, image: '/trucco.jpg', description: 'Sets makeup for 16 hours', badge: 'BESTSELLER' },
+            { id: 5, name: 'Magic Serum', price: 75, category: 'skincare', rating: 5, image: '/body-tilbury.jpg', description: 'Anti-aging serum with vitamin C' },
+            { id: 6, name: 'Matte Revolution', price: 32, category: 'makeup', rating: 5, image: '/trucco.jpg', description: 'Long-lasting matte lipstick' },
+            { id: 7, name: 'Scent of a Dream', price: 125, originalPrice: 150, category: 'fragrance', rating: 5, image: '/body-tilbury.jpg', description: 'Sensual floral fragrance', badge: 'SALE', badgeClass: 'sale' },
+            { id: 8, name: 'Eye Cream', price: 55, category: 'skincare', rating: 4, image: '/fondotinta.jpg', description: 'Anti-wrinkle eye contour cream', badge: 'NEW', badgeClass: 'new' },
         ];
 
         let cart = [];
