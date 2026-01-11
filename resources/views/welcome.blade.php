@@ -26,11 +26,7 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-image: url('/hero-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
+            background-color: var(--ct-cream);
             overflow-x: hidden;
         }
         
@@ -242,12 +238,13 @@
             position: relative;
             height: 80vh;
             overflow: hidden;
+            background-image: url('/body-tilbury.jpg');
+            background-size: cover;
+            background-position: center;
         }
         
         .video-hero video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            display: none;
         }
         
         .video-overlay {
@@ -256,7 +253,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, transparent 100%);
+            background: rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
         }
@@ -287,7 +284,8 @@
         /* Carousel/Slider */
         .carousel-section {
             padding: 80px 20px;
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
         }
         
         .carousel-container {
@@ -337,8 +335,9 @@
         
         /* Product Filters */
         .filters-section {
-            background: var(--ct-cream);
+            background: rgba(250, 249, 247, 0.9);
             padding: 40px 20px;
+            backdrop-filter: blur(10px);
         }
         
         .filters-container {
@@ -660,7 +659,8 @@
         /* Reviews Section */
         .reviews-section {
             padding: 80px 20px;
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
         }
         
         .reviews-container {
@@ -911,9 +911,6 @@
 
     <!-- Video Hero -->
     <div class="video-hero">
-        <video autoplay muted loop playsinline>
-            <source src="https://cdn.coverr.co/videos/coverr-woman-applying-makeup-6408/1080p.mp4" type="video/mp4">
-        </video>
         <div class="video-overlay">
             <div class="video-content">
                 <h1 class="font-display">The Magic of Beauty</h1>
